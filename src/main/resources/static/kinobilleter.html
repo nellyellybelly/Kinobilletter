@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Kjøp av kinobilletter</title>
+
+    <script src = "billetter.js"></script>
+
+</head>
+<body>
+<h1>Kjøp av kinobilletter</h1>
+<h6>Fyll ut boksene og trykk registrer når gjennomført!</h6>
+<table>
+    <tr>
+        <td><label for="filmvalg">Film</label></td>
+        <td>
+            <select id="filmvalg">
+                <option value="">Velg film</option>
+                <option value="Hunger Games">Hunger Games</option>
+                <option value="White Chicks">White Chicks</option>
+                <option value="The Notebook">The Notebook</option>
+                <option value="How To Lose a Guy In Ten Days">How To Lose a Guy In Ten Days</option>
+                <option value="Crazy Rich Asians">Crazy Rich Asians</option>
+                <option value="Twilight">Twilight</option>
+            </select>
+        </td>
+    </tr>
+    <tr>
+        <td><label for="Fornavn">Fornavn</label></td>
+        <td><input type="text" id="Fornavn"></td>
+        <td id="fornavnError" style="color:red"></td>
+    </tr>
+    <tr>
+        <td><label for="Etternavn">Etternavn</label></td>
+        <td><input type="text" id="Etternavn"></td>
+        <td id="etternavnError" style="color:red"></td>
+    </tr>
+    <tr>
+        <td><label for="Telefonnummer">Telefonnummer</label></td>
+        <td><input type="text" id="Telefonnummer"></td>
+        <td id="telefonError" style="color:red"></td>
+    </tr>
+    <tr>
+        <td><label for="Epostadresse">Epostadresse</label></td>
+        <td><input type="text" id="Epostadresse"></td>
+        <td id="epostError" style="color:red"></td>
+    </tr>
+    <tr>
+        <td><label for="Antall_billetter">Antall billetter</label></td>
+        <td>
+            <select id="Antall_billetter">
+                <option value="">Velg antall</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+            </select>
+        </td>
+        <td id="antallError" style="color:red"></td>
+    </tr>
+    <tr>
+        <td><button onclick="registrer()">Registrer</button></td>
+    </tr>
+    <tr>
+        <td><button onclick="slettAlleBillettene()">Slett alle billettene</button></td>
+    </tr>
+</table>
+
+<div id="Kinobilletter"></div>
+<div id="feilMeldinger" style="color:red"></div>
+
+</body>
